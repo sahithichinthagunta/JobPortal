@@ -10,6 +10,9 @@ import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 
 const app = express();
+app.get('/', (req, res) => {
+    res.send('Job Portal Backend is Running 🚀');
+});
 config({ path: "./config/config.env" });
 
 app.use(
